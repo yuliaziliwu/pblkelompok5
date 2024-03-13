@@ -77,6 +77,11 @@
         @yield('content')
     </div>
 
+    <!-- yulia -->
+    <div style="display:flex">
+    <img src="{{ asset('images/yulia1.jpg') }}" alt="images" style="width:30%;">
+    <img src="{{ asset('images/yulia2.jpg') }}" alt="images" style="width:30%;">
+</div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-0 border-top bg-white shadow">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
