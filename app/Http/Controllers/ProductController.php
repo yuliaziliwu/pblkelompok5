@@ -8,13 +8,15 @@ class ProductController extends Controller
 {
     public function getData()
     {
-        $dataBarang = [
-            ['id' => 1, 'produk'=> 'laptop', 'harga' =>17000000],
-            ['id' => 2, 'produk'=> 'mouse', 'harga' =>150000],
-            ['id' => 3, 'produk'=> 'fan', 'harga' =>90000],
-            ['id' => 4, 'produk'=> 'camera', 'harga' =>3600000],
+        $data = [
+            ['id' => 1, 'produk'=> 'Moisturizer', 'merk'=> 'Hadalabo', 'harga' =>100000],
+            ['id' => 2, 'produk'=> 'Sunscreen', 'merk'=> 'SkinAqua', 'harga' =>50000],
+            ['id' => 3, 'produk'=> 'Face Mist', 'merk'=> 'Saffron', 'harga' =>9000],
+            ['id' => 4, 'produk'=> 'Face Wash', 'merk'=> 'Hadalabo Shyirojyun', 'harga' =>36000],
+            ['id' => 4, 'produk'=> 'Lip Balm', 'merk'=> 'Pure Paw Paw', 'harga' =>55000],
+            ['id' => 4, 'produk'=> 'Lip Cream', 'merk'=> 'Hanasui', 'harga' =>56000],
         ];
-        return $dataBarang;
+        return $data;
     }
 
     public function list_Product()
@@ -23,14 +25,3 @@ class ProductController extends Controller
         return view('list_product', compact('data'));
     }
 };
-//     public function listProduct()
-//     {
-//         $data = [
-//             ['id' => 1, 'produk' => 'Laptop'],
-//             ['id' => 2, 'produk' => 'Laptop Pen'],
-//             ['id' => 3, 'produk' => 'Handphone'],
-//         ];
-//         return view('list_product', compact('data'));
-//     }
-// }
-

@@ -1,23 +1,28 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            @yield('title', 'Skincare')
-        </title>
-    </head>
+@extends('layout.list')
 
-    <body>
-        <header>
-            @include('components.header')
-        </header>
-        
-        <h1>List Produk</h1>
-        <div class="container">
-            <main>@yield('content')</main>
-        </div>
+@section('title', 'SKINCARE')
 
-        <footer>
-            @include('components.footer')
-        </footer>
-    </body>
-</html>
+@section('content')
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Produk</th>
+                <th>Merk</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($data as $post)
+                <tr>
+                    <td>{{ $post['id'] }}</td>
+                    <td>{{ $post['produk'] }}</td>
+                    <td>{{ $post['merk'] }}</td>
+                    <td>{{ $post['harga'] }}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+@endsection
+
+
