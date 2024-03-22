@@ -10,7 +10,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <style>
         .nav-item:hover {
-            background: rgba(0, 0, 0, 0.1)
+            background: [jrgba(0, 0, 0, 0.1)
         }
 
         input::-webkit-outer-spin-button,
